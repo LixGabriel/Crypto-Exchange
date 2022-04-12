@@ -1,0 +1,15 @@
+:root {
+  --green-color: #28a745;
+  --red-color: #dc3545;
+  --yellow-color: #ffc107;
+  --blue-color: #007bff;
+  --gray-color: #2a2d35;
+  --black-color: #161a1e;
+}
+
+body {
+  background-color: var(--black-color);
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: 500;
+}
