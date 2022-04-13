@@ -13,3 +13,120 @@ body {
   color: white;
   font-weight: 500;
 }
+
+
+/**********  Header  **********/
+
+#header {
+  padding: 1.5em 2em;
+  border-bottom: 3px solid var(--gray-color);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 6em;
+}
+
+#balance {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#total-balance, #dollar-sign {
+  color: var(--green-color);
+}
+
+
+/**********  Grid  **********/
+
+#market, #portfolio {
+  margin-top: 3em;
+}
+
+#market-title, #portfolio-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em 3em;
+  color: gray;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+
+/**********  Market / Portfolio  **********/
+
+.coin-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 1em;
+}
+
+.coin-image {
+  width: 1.8em;
+}
+
+.coin-name {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.coin-symbol {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: gray;
+}
+
+.coin-price-div, .coin-owned-div {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.per-coin, .coin-owned-symbol {
+  font-size: 0.7em;
+  font-weight: 700;
+  color: gray;
+}
+
+.arrow-button {
+  transform: rotate(-90deg);
+  font-size: 0.9em;
+  color: lightgray;
+}
+
+.coin-owned-symbol {
+  position: relative;
+  bottom: 0.15em;
+}
+
+#market {
+  border-bottom: 3px solid var(--gray-color);
+  padding-bottom: 1em;
+}
+
+#portfolio {
+  border-bottom: 3px solid var(--gray-color);
+  padding-bottom: 1em;
+}
+
+#copyright {
+  text-align: center;
+  color: gray;
+  font-size: 0.6em;
+  font-weight: 700;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+

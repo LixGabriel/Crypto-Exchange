@@ -28,10 +28,201 @@
 
   <body>
 
-    Hello World!
+    <!-- Header -->
+    <div id="header">
+      <div class="container-header">
+        <a href="./index.html"><img id="logo" src="./images/logo.png" alt="logo" /></a>
+        <div id="balance">Balance: <span id="dollar-sign">&nbsp$</span><span id="total-balance">0</span></div>
+      </div>
+    </div>
+
+    <!-- Grid Container -->
+    <div class="container">
+      <div class="row">
 
 
+        <!-- Market -->
+        <div class="col-sm-12 col-md-6">
+          <div id="market">
 
+            <div id="market-title"><i class="fa-solid fa-arrow-trend-up"></i>&nbsp&nbsp Market</div>
+
+            <div class="mp-header" id="market-header">
+              <div class="coins-prices" id="market-coins">Coin</div>
+              <div class="coins-prices" id="market-prices">Price</div>
+            </div>
+
+            <div id="market-coin-list">
+
+              <!-- Bitcoin -->
+              <div class="coin-div" id="market-bitcoin-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/BTC.png" alt="bitcoin">
+                  <span class="coin-name">&nbspBitcoin</span>
+                  <span class="coin-symbol">&nbsp&nbspBTC</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-price-div">$<span class="coin-price-span" id="bitcoin-price">0</span>&nbsp<span class="per-coin">/ BTC</span><span>&nbsp&nbsp&nbsp&nbsp<i id="bitcoin-arrow-market" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Ethereum -->
+              <div class="coin-div" id="market-ethereum-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/ETH.png" alt="ethereum">
+                  <span class="coin-name">&nbspEthereum</span>
+                  <span class="coin-symbol">&nbsp&nbspETH</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-price-div">$<span class="coin-price-span" id="ethereum-price">0</span>&nbsp<span class="per-coin">/ ETH</span><span>&nbsp&nbsp&nbsp&nbsp<i id="ethereum-arrow-market" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Tether -->
+              <div class="coin-div" id="market-tether-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/USDT.png" alt="tether">
+                  <span class="coin-name">&nbspTether</span>
+                  <span class="coin-symbol">&nbsp&nbspUSD</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-price-div">$<span class="coin-price-span" id="tether-price">0</span>&nbsp<span class="per-coin">/ USD</span><span>&nbsp&nbsp&nbsp&nbsp<i id="tether-arrow-market" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Polkadot -->
+              <div class="coin-div" id="market-polkadot-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/DOT.png" alt="polkadot">
+                  <span class="coin-name">&nbspPolkadot</span>
+                  <span class="coin-symbol">&nbsp&nbspDOT</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-price-div">$<span class="coin-price-span" id="polkadot-price">0</span>&nbsp<span class="per-coin">/ DOT</span><span>&nbsp&nbsp&nbsp&nbsp<i id="polkadot-arrow-market" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Elrond -->
+              <div class="coin-div" id="market-elrond-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/EGLD.png" alt="elrond">
+                  <span class="coin-name">&nbspElrond</span>
+                  <span class="coin-symbol">&nbsp&nbspEGD</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-price-div">$<span class="coin-price-span" id="elrond-price">0</span>&nbsp<span class="per-coin">/ EGD</span><span>&nbsp&nbsp&nbsp&nbsp<i id="elrond-arrow-market" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Portfolio -->
+        <div class="col-sm-12 col-md-6">
+          <div id="portfolio">
+
+            <div id="portfolio-title"><i class="fa-solid fa-wallet"></i></i>&nbsp&nbsp Portfolio</div>
+
+            <div class="mp-header" id="portfolio-header">
+              <div class="coins-prices" id="portfolio-coins">Coin</div>
+              <div class="coins-prices" id="portfolio-prices">Amount</div>
+            </div>
+
+            <div id="portfolio-coin-list">
+
+              <!-- Bitcoin -->
+              <div class="coin-div" id="portfolio-bitcoin-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/BTC.png" alt="bitcoin">
+                  <span class="coin-name">&nbspBitcoin</span>
+                  <span class="coin-symbol">&nbsp&nbspBTC</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-owned-div"><span class="coin-owned-span" id="bitcoin-owned">0</span>&nbsp<span class="coin-owned-symbol"> BTC</span><span>&nbsp&nbsp&nbsp&nbsp<i id="bitcoin-arrow-portfolio" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Ethereum -->
+              <div class="coin-div" id="portfolio-ethereum-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/ETH.png" alt="ethereum">
+                  <span class="coin-name">&nbspEthereum</span>
+                  <span class="coin-symbol">&nbsp&nbspETH</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-owned-div"><span class="coin-owned-span" id="ethereum-owned">0</span>&nbsp<span class="coin-owned-symbol"> ETH</span><span>&nbsp&nbsp&nbsp&nbsp<i id="ethereum-arrow-portfolio" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Tether -->
+              <div class="coin-div" id="portfolio-tether-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/USDT.png" alt="tether">
+                  <span class="coin-name">&nbspTether</span>
+                  <span class="coin-symbol">&nbsp&nbspUSD</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-owned-div"><span class="coin-owned-span" id="tether-owned">0</span>&nbsp<span class="coin-owned-symbol"> USD</span><span>&nbsp&nbsp&nbsp&nbsp<i id="tether-arrow-portfolio" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Polkadot -->
+              <div class="coin-div" id="portfolio-polkadot-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/DOT.png" alt="polkadot">
+                  <span class="coin-name">&nbspPolkadot</span>
+                  <span class="coin-symbol">&nbsp&nbspDOT</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-owned-div"><span class="coin-owned-span" id="polkadot-owned">0</span>&nbsp<span class="coin-owned-symbol"> DOT</span><span>&nbsp&nbsp&nbsp&nbsp<i id="polkadot-arrow-portfolio" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+              <!-- Elrond -->
+              <div class="coin-div" id="portfolio-elrond-div">
+                <!-- Left -->
+                <div id="left-coin-details">
+                  <img class="coin-image" src="./images/EGLD.png" alt="elrond">
+                  <span class="coin-name">&nbspElrond</span>
+                  <span class="coin-symbol">&nbsp&nbspEGD</span>
+                </div>
+                <!-- Right -->
+                <div id="right-coin-details">
+                  <div class="coin-owned-div"><span class="coin-owned-span" id="elrond-owned">0</span>&nbsp<span class="coin-owned-symbol"> EGD</span><span>&nbsp&nbsp&nbsp&nbsp<i id="elrond-arrow-portfolio" class="fa-solid fa-circle-chevron-down arrow-button"></i></i></span></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="copyright">@Lixandru Liviu-Gabriel</div>
+    
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JavaScript -->
@@ -39,3 +230,4 @@
 
   </body>
 </html>
+
