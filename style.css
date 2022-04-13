@@ -104,6 +104,7 @@ body {
   transform: rotate(-90deg);
   font-size: 0.9em;
   color: lightgray;
+  cursor: pointer;
 }
 
 .arrow-button-active {
