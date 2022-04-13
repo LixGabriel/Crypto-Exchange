@@ -110,11 +110,14 @@ body {
 
 .arrow-button:hover {
   color: white;
-  transform: scale(1.1);
+  transform: rotate(0deg) scale(1.1);
 }
 
 .arrow-button-active {
   transform: rotate(0deg);
+}
+.arrow-button-active:hover {
+  transform: rotate(-90deg) scale(1.1);
 }
 
 .coin-owned-symbol {
