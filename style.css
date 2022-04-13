@@ -102,9 +102,15 @@ body {
 
 .arrow-button {
   transform: rotate(-90deg);
-  font-size: 0.9em;
+  font-size: 1em;
   color: lightgray;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.arrow-button:hover {
+  color: white;
+  transform: scale(1.1);
 }
 
 .arrow-button-active {
@@ -181,4 +187,3 @@ body {
 .btn-danger:hover {
   background-color: rgb(160, 0, 0);
 }
-
