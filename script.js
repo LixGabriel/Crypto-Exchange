@@ -537,21 +537,21 @@ function ready() {
     if ( isNaN($("#sell-usdt-input").val()) || ($("#sell-usdt-input").val()) <= 0 ) {
       alert("Invalid quantity!");
     }
-    else if ( ( $("#sell-usdt-input").val() * bitcoinPrice ) > totalBalance ) {
+    else if ( ( $("#sell-usdt-input").val() * tetherPrice ) > totalBalance ) {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseFloat(totalBalance) + parseFloat( $("#sell-usdt-input").val() * bitcoinPrice);
+      totalBalance = parseFloat(totalBalance) + parseFloat( $("#sell-usdt-input").val() * tetherPrice);
       ownedTether = parseFloat(ownedTether) - parseFloat( $("#sell-usdt-input").val());
       
-      alert("Successful sold " + $("#sell-usdt-input").val() + " USDT for $" + ( $("#sell-usdt-input").val() * bitcoinPrice) + " at the price of $" + bitcoinPrice + "/USDT.");
+      alert("Successful sold " + $("#sell-usdt-input").val() + " USDT for $" + ( $("#sell-usdt-input").val() * tetherPrice) + " at the price of $" + tetherPrice + "/USDT.");
       
       $("#total-balance").text(totalBalance);
-      $("#bitcoin-owned").text(ownedTether);
+      $("#tether-owned").text(ownedTether);
       $("#sell-usdt-input").val("");
       $("#preview-sell-usdt").text("0");
-      $("#sell-bitcoin-div").fadeOut(100);
-      $("#bitcoin-arrow-market").removeClass('arrow-button-active');
+      $("#sell-tether-div").fadeOut(100);
+      $("#tether-arrow-market").removeClass('arrow-button-active');
     }
   }
   $("#sell-usdt-button").on('click', sellTether);
