@@ -30,7 +30,7 @@ body {
 }
 
 #logo {
-  width: 7em;
+  width: 8em;
 }
 
 #balance {
@@ -72,7 +72,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2em 1em;
+  margin: 3em 1em;
 }
 
 .coin-image {
@@ -82,17 +82,22 @@ body {
 .coin-name {
   font-size: 1em;
   font-weight: 600;
+  position: relative;
+  top: 0.15em;
 }
 
 .coin-symbol {
   font-size: 0.8em;
   font-weight: 700;
   color: gray;
+  position: relative;
+  top: 0.15em;
 }
 
 .coin-price-div, .coin-owned-div {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 600;
+  
 }
 
 .per-coin, .coin-owned-symbol {
@@ -179,8 +184,8 @@ body {
 .btn {
   font-size: 0.8em;
   font-weight: 600;
-  padding: 0.4em 1em;
-  margin-top: 1em;
+  padding: 0.3em 0.9em;
+  margin-top: 1.5em;
   margin-bottom: 2em;
 }
 
@@ -190,4 +195,131 @@ body {
 
 .btn-danger:hover {
   background-color: rgb(160, 0, 0);
+}
+
+
+
+/**********  Media Queries  **********/
+
+@media only screen and (min-width: 600px) {
+
+  #header {
+    padding: 1.8em 4em;
+  }
+
+  #logo {
+    width: 10em;
+  }
+
+  #balance {
+    font-size: 1.2em;
+  }
+
+  #market-title, #portfolio-title {
+    font-size: 1.8em;
+  }
+
+  .coin-image {
+    width: 2em;
+  }
+  
+  .coin-name {
+    font-size: 1.1em;
+  }
+  
+  .coin-price-div, .coin-owned-div {
+    font-size: 1.1em;
+  }
+
+  #copyright {
+    font-size: 0.9em;
+  }
+  
+  .quantity {
+    font-size: 0.9em;
+  }
+  
+  .total {
+    font-size: 0.9em;
+  }
+  
+  .btn {
+    font-size: 0.8em;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  #header {
+    padding: 2em 5em;
+  }
+
+  #logo {
+    width: 11em;
+  }
+
+  #balance {
+    font-size: 1.3em;
+  }
+
+  .mp-header {
+    font-size: 1em;
+  }
+
+  .coin-image {
+    width: 2.7em;
+  }
+  
+  .coin-name {
+    font-size: 1.3em;
+  }
+
+  .coin-symbol {
+    font-size: 0.9em;
+  }
+  
+  .coin-price-div, .coin-owned-div {
+    font-size: 1.2em;
+  }
+  
+  .per-coin, .coin-owned-symbol {
+    font-size: 0.8em;
+  }
+  
+  .arrow-button {
+    font-size: 1.1em;
+  }
+
+  #copyright {
+    font-size: 1em;
+  }
+  
+  .quantity {
+    font-size: 1.1em;
+  }
+
+  .input {
+    font-size: 0.8em;
+    width: 8em;
+    padding: 0.3em;
+    margin-left: 1.2em;
+  }
+  
+  .total {
+    font-size: 1.1em;
+  }
+  
+  .btn {
+    font-size: 1em;
+  }
+
+  #market {
+    margin-right: 3em;
+  }
+
+  #portfolio {
+    margin-left: 3em;
+  }
+
 }
