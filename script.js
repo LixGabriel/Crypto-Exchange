@@ -36,7 +36,7 @@ $("#elrond-owned").text(ownedElrond);
 // ------------------------------------------------------------
 
 
-// Adding buy/sell menu functions
+// Functions for buy/sell menu
 
 
 // Bitcoin buy menu
@@ -200,4 +200,81 @@ $("#elrond-arrow-portfolio").on('click', elrondSellMenu);
 
 
 // ------------------------------------------------------------
+
+
+// Functions for total preview
+
+// Bitcoin buy toal
+function bitcoinBuyTotal() {
+  const totalInUsd = ( $("#buy-btc-input").val() * bitcoinPrice);
+  $("#preview-buy-btc").text( totalInUsd );
+}
+$("#buy-btc-input").on('input', bitcoinBuyTotal);
+
+// Ethereum buy total
+function ethereumBuyTotal() {
+  const totalInUsd = ( $("#buy-eth-input").val() * ethereumPrice);
+  $("#preview-buy-eth").text( totalInUsd );
+}
+$("#buy-eth-input").on('input', ethereumBuyTotal);
+
+// Tether buy total
+function tetherBuyTotal() {
+  const totalInUsd = ( $("#buy-usdt-input").val() * tetherPrice);
+  $("#preview-buy-usdt").text( totalInUsd );
+}
+$("#buy-usdt-input").on('input', tetherBuyTotal);
+
+// Polkadot buy total
+function polkadotBuyTotal() {
+  const totalInUsd = ( $("#buy-dot-input").val() * polkadotPrice);
+  $("#preview-buy-dot").text( totalInUsd );
+}
+$("#buy-dot-input").on('input', polkadotBuyTotal);
+
+// Elrond buy total
+function elrondBuyTotal() {
+  const totalInUsd = ( $("#buy-egld-input").val() * elrondPrice);
+  $("#preview-buy-egld").text( totalInUsd );
+}
+$("#buy-egld-input").on('input', elrondBuyTotal);
+
+// Bitcoin sell toal
+function bitcoinSellTotal() {
+  const totalInUsd = ( $("#sell-btc-input").val() * bitcoinPrice);
+  $("#preview-sell-btc").text( totalInUsd );
+}
+$("#sell-btc-input").on('input', bitcoinSellTotal);
+
+// Ethereum sell toal
+function ethereumSellTotal() {
+  const totalInUsd = ( $("#sell-eth-input").val() * ethereumPrice);
+  $("#preview-sell-eth").text( totalInUsd );
+}
+$("#sell-eth-input").on('input', ethereumSellTotal);
+
+// Tether sell toal
+function tetherSellTotal() {
+  const totalInUsd = ( $("#sell-usdt-input").val() * tetherPrice);
+  $("#preview-sell-usdt").text( totalInUsd );
+}
+$("#sell-usdt-input").on('input', tetherSellTotal);
+
+// Polkadot sell toal
+function polkadotSellTotal() {
+  const totalInUsd = ( $("#sell-dot-input").val() * polkadotPrice);
+  $("#preview-sell-dot").text( totalInUsd );
+}
+$("#sell-dot-input").on('input', polkadotSellTotal);
+
+// Elrond sell toal
+function elrondSellTotal() {
+  const totalInUsd = ( $("#sell-egld-input").val() * elrondPrice);
+  $("#preview-sell-egld").text( totalInUsd );
+}
+$("#sell-egld-input").on('input', elrondSellTotal);
+
+
+// ------------------------------------------------------------
+
 
