@@ -55,6 +55,7 @@ function ready() {
       $("#buy-bitcoin-div").fadeIn(400);
       $("#bitcoin-arrow-market").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-buy-btc").text("0");
     }
     else if ($("#buy-bitcoin-div").css('display') !== 'none') {
       $("#buy-bitcoin-div").fadeOut(200);
@@ -72,6 +73,7 @@ function ready() {
       $("#buy-ethereum-div").fadeIn(400);
       $("#ethereum-arrow-market").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-buy-eth").text("0");
     }
     else if ($("#buy-ethereum-div").css('display') !== 'none') {
       $("#buy-ethereum-div").fadeOut(200);
@@ -89,6 +91,7 @@ function ready() {
       $("#buy-tether-div").fadeIn(400);
       $("#tether-arrow-market").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-buy-usdt").text("0");
     }
     else if ($("#buy-tether-div").css('display') !== 'none') {
       $("#buy-tether-div").fadeOut(200);
@@ -106,6 +109,7 @@ function ready() {
       $("#buy-polkadot-div").fadeIn(400);
       $("#polkadot-arrow-market").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-buy-dot").text("0");
     }
     else if ($("#buy-polkadot-div").css('display') !== 'none') {
       $("#buy-polkadot-div").fadeOut(200);
@@ -123,6 +127,7 @@ function ready() {
       $("#buy-elrond-div").fadeIn(400);
       $("#elrond-arrow-market").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-buy-egld").text("0");
     }
     else if ($("#buy-elrond-div").css('display') !== 'none') {
       $("#buy-elrond-div").fadeOut(200);
@@ -140,6 +145,7 @@ function ready() {
       $("#sell-bitcoin-div").fadeIn(400);
       $("#bitcoin-arrow-portfolio").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-sell-btc").text("0");
     }
     else if ($("#sell-bitcoin-div").css('display') !== 'none') {
       $("#sell-bitcoin-div").fadeOut(200);
@@ -157,6 +163,7 @@ function ready() {
       $("#sell-ethereum-div").fadeIn(400);
       $("#ethereum-arrow-portfolio").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-sell-eth").text("0");
     }
     else if ($("#sell-ethereum-div").css('display') !== 'none') {
       $("#sell-ethereum-div").fadeOut(200);
@@ -174,6 +181,7 @@ function ready() {
       $("#sell-tether-div").fadeIn(400);
       $("#tether-arrow-portfolio").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-sell-usdt").text("0");
     }
     else if ($("#sell-tether-div").css('display') !== 'none') {
       $("#sell-tether-div").fadeOut(200);
@@ -191,6 +199,7 @@ function ready() {
       $("#sell-polkadot-div").fadeIn(400);
       $("#polkadot-arrow-portfolio").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-sell-dot").text("0");
     }
     else if ($("#sell-polkadot-div").css('display') !== 'none') {
       $("#sell-polkadot-div").fadeOut(200);
@@ -208,6 +217,7 @@ function ready() {
       $("#sell-elrond-div").fadeIn(400);
       $("#elrond-arrow-portfolio").addClass('arrow-button-active');
       $(".input").val("");
+      $("#preview-sell-egld").text("0");
     }
     else if ($("#sell-elrond-div").css('display') !== 'none') {
       $("#sell-elrond-div").fadeOut(200);
