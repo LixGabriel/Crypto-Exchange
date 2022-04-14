@@ -489,7 +489,7 @@ function ready() {
     if ( isNaN($("#sell-btc-input").val()) || ($("#sell-btc-input").val()) <= 0 ) {
       alert("Invalid quantity!");
     }
-    else if ( ( $("#sell-btc-input").val() * bitcoinPrice ) > totalBalance ) {
+    else if ( ( $("#sell-btc-input").val() ) > ownedBitcoin ) {
       alert("Insufficient funds!");
     }
     else {
@@ -513,7 +513,7 @@ function ready() {
     if ( isNaN($("#sell-eth-input").val()) || ($("#sell-eth-input").val()) <= 0 ) {
       alert("Invalid quantity!");
     }
-    else if ( ( $("#sell-eth-input").val() * ethereumPrice ) > totalBalance ) {
+    else if ( ( $("#sell-eth-input").val() ) > ownedEthereum ) {
       alert("Insufficient funds!");
     }
     else {
@@ -537,7 +537,7 @@ function ready() {
     if ( isNaN($("#sell-usdt-input").val()) || ($("#sell-usdt-input").val()) <= 0 ) {
       alert("Invalid quantity!");
     }
-    else if ( ( $("#sell-usdt-input").val() * tetherPrice ) > totalBalance ) {
+    else if ( ( $("#sell-usdt-input").val() ) > ownedTether ) {
       alert("Insufficient funds!");
     }
     else {
@@ -561,7 +561,7 @@ function ready() {
     if ( isNaN($("#sell-dot-input").val()) || ($("#sell-dot-input").val()) <= 0 ) {
       alert("Invalid quantity!");
     }
-    else if ( ( $("#sell-dot-input").val() * polkadotPrice ) > totalBalance ) {
+    else if ( ( $("#sell-dot-input").val() ) > ownedPolkadot ) {
       alert("Insufficient funds!");
     }
     else {
@@ -585,7 +585,7 @@ function ready() {
     if ( isNaN($("#sell-egld-input").val()) || ($("#sell-egld-input").val()) <= 0 ) {
       alert("Invalid quantity!");
     }
-    else if ( ( $("#sell-egld-input").val() * elrondPrice ) > totalBalance ) {
+    else if ( ( $("#sell-egld-input").val()  ) > ownedElrond ) {
       alert("Insufficient funds!");
     }
     else {
