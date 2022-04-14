@@ -372,8 +372,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) - parseInt( $("#buy-btc-input").val() * bitcoinPrice);
-      ownedBitcoin = parseInt(ownedBitcoin) + parseInt( $("#buy-btc-input").val());
+      totalBalance = parseFloat(totalBalance) - parseFloat( $("#buy-btc-input").val() * bitcoinPrice);
+      ownedBitcoin = parseFloat(ownedBitcoin) + parseFloat( $("#buy-btc-input").val());
       
       alert("Successful bought " + $("#buy-btc-input").val() + " BTC for $" + ( $("#buy-btc-input").val() * bitcoinPrice) + " at the price of $" + bitcoinPrice + "/BTC.");
       
@@ -396,8 +396,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) - parseInt( $("#buy-eth-input").val() * ethereumPrice);
-      ownedEthereum = parseInt(ownedEthereum) + parseInt( $("#buy-eth-input").val());
+      totalBalance = parseFloat(totalBalance) - parseFloat( $("#buy-eth-input").val() * ethereumPrice);
+      ownedEthereum = parseFloat(ownedEthereum) + parseFloat( $("#buy-eth-input").val());
       
       alert("Successful bought " + $("#buy-eth-input").val() + " ETH for $" + ( $("#buy-eth-input").val() * ethereumPrice) + " at the price of $" + ethereumPrice + "/ETH.");
       
@@ -420,8 +420,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) - parseInt( $("#buy-usdt-input").val() * tetherPrice);
-      ownedTether = parseInt(ownedTether) + parseInt( $("#buy-usdt-input").val());
+      totalBalance = parseFloat(totalBalance) - parseFloat( $("#buy-usdt-input").val() * tetherPrice);
+      ownedTether = parseFloat(ownedTether) + parseFloat( $("#buy-usdt-input").val());
       
       alert("Successful bought " + $("#buy-usdt-input").val() + " USDT for $" + ( $("#buy-usdt-input").val() * tetherPrice) + " at the price of $" + tetherPrice + "/USDT.");
       
@@ -444,8 +444,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) - parseInt( $("#buy-dot-input").val() * polkadotPrice);
-      ownedPolkadot = parseInt(ownedPolkadot) + parseInt( $("#buy-dot-input").val());
+      totalBalance = parseFloat(totalBalance) - parseFloat( $("#buy-dot-input").val() * polkadotPrice);
+      ownedPolkadot = parseFloat(ownedPolkadot) + parseFloat( $("#buy-dot-input").val());
       
       alert("Successful bought " + $("#buy-dot-input").val() + " DOT for $" + ( $("#buy-dot-input").val() * polkadotPrice) + " at the price of $" + polkadotPrice + "/DOT.");
       
@@ -468,8 +468,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) - parseInt( $("#buy-egld-input").val() * elrondPrice);
-      ownedElrond = parseInt(ownedElrond) + parseInt( $("#buy-egld-input").val());
+      totalBalance = parseFloat(totalBalance) - parseFloat( $("#buy-egld-input").val() * elrondPrice);
+      ownedElrond = parseFloat(ownedElrond) + parseFloat( $("#buy-egld-input").val());
       
       alert("Successful bought " + $("#buy-egld-input").val() + " EGLD for $" + ( $("#buy-egld-input").val() * elrondPrice) + " at the price of $" + elrondPrice + "/EGLD.");
       
@@ -493,8 +493,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) + parseInt( $("#sell-btc-input").val() * bitcoinPrice);
-      ownedBitcoin = parseInt(ownedBitcoin) - parseInt( $("#sell-btc-input").val());
+      totalBalance = parseFloat(totalBalance) + parseFloat( $("#sell-btc-input").val() * bitcoinPrice);
+      ownedBitcoin = parseFloat(ownedBitcoin) - parseFloat( $("#sell-btc-input").val());
       
       alert("Successful sold " + $("#sell-btc-input").val() + " BTC for $" + ( $("#sell-btc-input").val() * bitcoinPrice) + " at the price of $" + bitcoinPrice + "/BTC.");
       
@@ -517,8 +517,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) + parseInt( $("#sell-eth-input").val() * ethereumPrice);
-      ownedEthereum = parseInt(ownedEthereum) - parseInt( $("#sell-eth-input").val());
+      totalBalance = parseFloat(totalBalance) + parseFloat( $("#sell-eth-input").val() * ethereumPrice);
+      ownedEthereum = parseFloat(ownedEthereum) - parseFloat( $("#sell-eth-input").val());
       
       alert("Successful sold " + $("#sell-eth-input").val() + " ETH for $" + ( $("#sell-eth-input").val() * ethereumPrice) + " at the price of $" + ethereumPrice + "/ETH.");
       
@@ -541,8 +541,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) + parseInt( $("#sell-usdt-input").val() * bitcoinPrice);
-      ownedTether = parseInt(ownedTether) - parseInt( $("#sell-usdt-input").val());
+      totalBalance = parseFloat(totalBalance) + parseFloat( $("#sell-usdt-input").val() * bitcoinPrice);
+      ownedTether = parseFloat(ownedTether) - parseFloat( $("#sell-usdt-input").val());
       
       alert("Successful sold " + $("#sell-usdt-input").val() + " USDT for $" + ( $("#sell-usdt-input").val() * bitcoinPrice) + " at the price of $" + bitcoinPrice + "/USDT.");
       
@@ -565,8 +565,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) + parseInt( $("#sell-dot-input").val() * polkadotPrice);
-      ownedPolkadot = parseInt(ownedPolkadot) - parseInt( $("#sell-dot-input").val());
+      totalBalance = parseFloat(totalBalance) + parseFloat( $("#sell-dot-input").val() * polkadotPrice);
+      ownedPolkadot = parseFloat(ownedPolkadot) - parseFloat( $("#sell-dot-input").val());
       
       alert("Successful sold " + $("#sell-dot-input").val() + " DOT for $" + ( $("#sell-dot-input").val() * polkadotPrice) + " at the price of $" + polkadotPrice + "/DOT.");
       
@@ -589,8 +589,8 @@ function ready() {
       alert("Insufficient funds!");
     }
     else {
-      totalBalance = parseInt(totalBalance) + parseInt( $("#sell-egld-input").val() * elrondPrice);
-      ownedElrond = parseInt(ownedElrond) - parseInt( $("#sell-egld-input").val());
+      totalBalance = parseFloat(totalBalance) + parseFloat( $("#sell-egld-input").val() * elrondPrice);
+      ownedElrond = parseFloat(ownedElrond) - parseFloat( $("#sell-egld-input").val());
       
       alert("Successful sold " + $("#sell-egld-input").val() + " EGLD for $" + ( $("#sell-egld-input").val() * elrondPrice) + " at the price of $" + elrondPrice + "/EGLD.");
       
